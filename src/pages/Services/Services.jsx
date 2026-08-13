@@ -3,7 +3,7 @@ import './Services.css';
 import ServicesHome from '../Home/ServicesHome'; 
 
 // ১. এখানে আপনার ProfessionalSections কম্পোনেন্টটি ইমপোর্ট করুন
-import ProfessionalSections from '../Home/Partners'; // আপনার সঠিক ফোল্ডার পাথ দিন
+import ProfessionalSections from '../Services/Partners'; // আপনার সঠিক ফোল্ডার পাথ দিন
 
 const Services = () => {
   return (

@@ -43,5 +43,15 @@
   text-transform: uppercase;
   text-align: center;
   border-radius: 5px;
+  
+  /* নতুন যোগ করুন: লেখাটি নিচে নামানোর জন্য */
+  display: inline-block; /* অথবা flex রাখতে পারেন */
 }
 
+/* টেক্সটকে আলাদাভাবে নিচে নামানোর জন্য একটি ট্যাগ বা span ব্যবহার করলে এটি দিন */
+.text-box span, 
+.text-box h2, 
+.text-box p {
+  position: relative;
+  top: 4px; /* এখানে পিক্সেল বাড়িয়ে বা কমিয়ে লেখাটি আপনার মতো নিচে নামাতে পারবেন */
+}

@@ -20,7 +20,7 @@ const ProfessionalSections = () => {
               <div className="icon-wrapper"><Briefcase size={30} /></div>
               <h5 className="fw-bold mt-3">Unsere Kompetenzen</h5>
               <p className="text-muted mt-2">Ihr zuverlässiges Bauunternehmen für Berlin & bundesweit! Professionelle Qualität für Ihre individuellen Projekte.</p>
-              <a href="/services" className="btn btn-outline-primary btn-sm mt-3">Leistungen ansehen</a>
+              <a href="/Leistungen" className="btn btn-outline-primary btn-sm mt-3">Leistungen ansehen</a>
             </div>
           </div>
 
@@ -30,7 +30,7 @@ const ProfessionalSections = () => {
               <div className="icon-wrapper"><Instagram size={30} /></div>
               <h5 className="fw-bold mt-3">Folgen Sie uns</h5>
               <p className="text-muted mt-2">Erhalten Sie Einblicke in unsere tägliche Arbeit und aktuelle Updates zu unseren Baustellen auf Instagram.</p>
-              <a href="#" className="btn btn-outline-primary btn-sm mt-3">Zu Instagram</a>
+              <a href="/Leistungen" className="btn btn-outline-primary btn-sm mt-3">Zu Instagram</a>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ const ProfessionalSections = () => {
               <div className="icon-wrapper"><Envelope size={30} /></div>
               <h5 className="fw-bold mt-3">Beratung benötigt?</h5>
               <p className="text-muted mt-2">Haben wir Ihr Interesse geweckt? Unsere Experten stehen Ihnen bei allen Fragen jederzeit gerne zur Verfügung.</p>
-              <a href="/contact" className="btn btn-primary btn-sm mt-3">Kontakt aufnehmen</a>
+              <a href="/Kontakt" className="btn btn-primary btn-sm mt-3">Kontakt aufnehmen</a>
             </div>
           </div>
           
