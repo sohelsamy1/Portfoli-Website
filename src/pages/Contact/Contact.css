@@ -45,7 +45,7 @@
   border-radius: 5px;
 }
 
-/* ফর্ম এবং কন্টেন্ট সেকশন - প্যাডিং ফিক্স করার জন্য !important যুক্ত করা হয়েছে */
+/* ফর্ম এবং কন্টেন্ট সেকশন */
 .contact-content-section,
 .contact-content {
   background-color: #FCFCFC !important;
@@ -131,4 +131,20 @@
   border: 1px solid #1b6fec;
   margin-top: 25px;
   margin-top: 30px;
+}
+
+
+/* ডেটপিকারের শতভাগ প্রশস্ত করার জন্য */
+.react-datepicker-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.react-datepicker__input-container {
+  display: block;
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100% !important;
 }

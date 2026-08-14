@@ -2,12 +2,15 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 const Contact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
-
-  const [formData, setFormData] = useState({
+  
+   const [formData, setFormData] = useState({
     vorname: '',
     nachname: '',
     adresse: '',
@@ -143,15 +146,24 @@ const Contact = () => {
                         required 
                       />
                     </div>
-                    <div className="col-md-6 mb-3">
-                      <input 
-                        type="date" 
-                        name="datum" 
-                        className="form-control" 
-                        value={formData.datum}
-                        onChange={handleChange}
-                      />
-                    </div>
+
+                 <div className="col-md-6 mb-3">
+                    <DatePicker
+                      selected={formData.datum ? new Date(formData.datum) : null}
+                      onChange={(date) => {
+                        const formattedDate = date ? date.toISOString().split('T')[0] : '';
+                        setFormData({
+                          ...formData,
+                          datum: formattedDate
+                        });
+                      }}
+                      dateFormat="dd/MM/yyyy"
+                      className="form-control"
+                      placeholderText="Datum auswählen"
+                      autoComplete="off"
+                    />
+                  </div>
+
                   </div>
                   <div className="mb-3">
                     <textarea 
