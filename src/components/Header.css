@@ -43,8 +43,6 @@ header nav.navbar .custom-box-width {
     font-size: 1rem;
 }
 
-
-
 /* ১. সব লিঙ্কের জন্য ডিফল্ট ইফেক্ট */
 .nav-link::after {
     content: '';
@@ -71,10 +69,6 @@ header nav.navbar .custom-box-width {
 .navbar-nav .nav-item:first-child .nav-link:hover::after {
     width: 75% !important;
 }
-
-
-
-
 
 /* বাটন ও ড্রপডাউন */
 .btn-kontakt {
@@ -127,4 +121,11 @@ header nav.navbar .custom-box-width {
 
 .mobile-sidebar.open {
     transform: translateX(0);
+}
+
+
+/* মোবাইল সাইডবারের লিঙ্কগুলোর মাঝখানের গ্যাপ কন্ট্রোল */
+.mobile-sidebar a {
+    padding-top: 12px !important;    /* উপরে গ্যাপ (বাড়াতে চাইলে ১৫px/২০px করুন) */
+    padding-bottom: 12px !important; /* নিচে গ্যাপ (বাড়াতে চাইলে ১৫px/২০px করুন) */
 }
